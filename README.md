@@ -40,20 +40,20 @@ The following external modules are excluded but will be needed for run this clas
 Install instructions
 --------------------
 
-### 1. First you will need to install nodejs and got that runing, follow thier instructions.
+## 1. First you will need to install nodejs and got that runing, follow thier instructions.
 
-### 2. Then get WebSocket-Node, fallow thier instructions.
+## 2. Then get WebSocket-Node, follow thier instructions.
 
-### 3. Has done this right just add files where you want the chat client want to be and 'server/chatserver.js' you probly should put where node is runing.
+## 3. Has you done this right just add the files where you want the chat client to be and 'server/chatserver.js' you probly should put where node is runing.
 
-### 4. Changes recomend and sometimes needed in chatserver.js
+## 4. Changes recomend and sometimes needed in chatserver.js
 
 * If needed change port on row 3.
 * Highly recomend to add allowed domains to connect to server on row 8.
 
-### 5. Run server by in nodejs's command promp write 'node server/chatserver.js' or what source your chatserver.js is from where node is runing.
+## 5. Run server by in nodejs's command promp write 'node server/chatserver.js' or what source your chatserver.js is from where node is runing.
 
-### 6. If server is up and runing is only to add address to chatserver.js as at, if it's local it should be 127.0.0.1:[port]
+## 6. If server is up and runing is only to add address to chatserver.js as at, if it's local it should be 127.0.0.1:[port]
 
 
 History
@@ -64,6 +64,7 @@ History
 v1.0.5 (2017-01-27)
 
 * First release on Github.
+* Added: Array for easy adding allowed domains for connection to server
 
 v1.0.0 (2017-01-26)
 
