@@ -6,7 +6,7 @@ got some irc-like comands as '/me', '/msg', '/nick', '/slap', '/connect', '/quit
 
 
 By Rasmus Berg, rasmus.berg@chibidesign.se
-
+Homepage: http://www.student.bth.se/~rabe13/dbwebb-kurser/javascript/me/kmom06/playground/kmom6_websocket-chat/ (Server is probly down, but you can use your own)
 
 License
 ------------------
