@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <title>Setting up a client for a Chibi's Node.js Chatserver</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+<body>
+<div id="chat-div">
+  <h1>Setting up a client for a Chibi's Node.js Chatserver.</h1>
+  
+  <p>
+    Open up firebug/webconsole and see the output in the console.
+  </p>
+  <p>
+    <label>
+      Connect:<br>
+      <input id="url" value="ws://127.0.0.1:1337">
+    </label>
+    <button id="connect">Connect</button>
+    <button id="disconnect">Disconnect</button>
+  </p>
+  
+  <label>Chat:</label><br>
+  <div id="chat">
+    <div id="output"></div>
+    <div id="onlinelist"></div>
+    <div id="messageDiv">
+      <button id="nick"><span class="offline">Offline</span></button>
+      <input id="message" type="text">
+      <button id="send">Send</button>
+    </div>
+    <div id="commands">
+      <table>
+        <tbody><tr>
+          <th>Command</th>
+          <th>What does it do?</th>
+          <th>Example</th>
+          <th>Result</th>
+        </tr>
+        <tr>
+          <td>/connect</td>
+          <td>Connect to server that is already choosen</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>/connect [server-address]</td>
+          <td>Coonect to choosen server</td>
+          <td>/connect ws://127.0.0.1:1337</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>/quit</td>
+          <td>Disconnect to chat-server</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>/quit [msg]</td>
+          <td>Disconnect to chat-server with message</td>
+          <td>/quit brb reboot computer</td>
+          <td>[nick] leaving (brb reboot)</td>
+        </tr>
+        <tr>
+          <td>/nick [new nick]</td>
+          <td>Change user nick (Between 2 to 15 chars)</td>
+          <td>/nick Chibi</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>/nickcolor [color]</td>
+          <td>Change nick-color (rgb-, hex- or hsl-color)</td>
+          <td>/nickcolor rgb(87, 62, 141)</td>
+          <td><span style="color:rgb(87, 62, 141)">[nick]</span></td>
+        </tr>
+        <tr>
+          <td>/color [color] [message]</td>
+          <td>Textcolor on message (rgb-, hex- or hsl-color)</td>
+          <td>/color #F70033 Red!</td>
+          <td>[nick]: <span style="color:#F70033;">Red!</span></td>
+        </tr>
+        <tr>
+          <td>/msg [nick] [message]</td>
+          <td>Private message in chat-window to choosen user</td>
+          <td>/msg Chibi Secret!</td>
+          <td>[nick]: *Chibi* Secret!</td>
+        </tr>
+        <tr>
+          <td>/notice [nick] [message]</td>
+          <td>Message to choosen user in chat-window</td>
+          <td>/notice Chibi Hello!</td>
+          <td>[nick]: -Chibi- Hello!</td>
+        </tr>
+        <tr>
+          <td>/slap [nick]</td>
+          <td>Slap choosen user in cyberspace</td>
+          <td>/slap Chibi</td>
+          <td>[nick] slaps Chibi around a bit with a large trout!</td>
+        </tr>
+        <tr>
+          <td>/me [message]</td>
+          <td>Write as third person</td>
+          <td>/me study now</td>
+          <td>* [nick] study now</td>
+        </tr>
+      </tbody></table>
+    </div>
+  </div>
+  
+</div>
+<script src="js/jquery.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>

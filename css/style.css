@@ -1,0 +1,122 @@
+body{
+  background: #cccccc;
+  margin: 0;
+  padding: 0;
+}
+
+/**
+ * Style for chat
+ */
+#chat-div {
+  width: 906px;
+  margin: 0 auto;
+  min-height: 10em;
+  padding: 1em;
+  color: #222222;
+  font: 100.01%/1.375 Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1;
+  background: #ffffff;
+}
+
+ #output {
+  height: 500px;
+  width: 635px;
+  padding: 5px;
+  border: 1px solid #555;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: inline-block;
+  background: #eee;
+  overflow-y: scroll;
+  overflow-x: auto;
+}
+#output time,
+#output nick-perf {
+  color: #555;
+}
+#onlinelist {
+  height: 500px;
+  width: 270px;
+  padding: 5px 8px;
+  margin-left: -5px;
+  border: 1px solid #555;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: inline-block;
+  background: #cccccc;
+  overflow-y: scroll;
+  overflow-x: auto;
+}
+#onlinelist span {
+  cursor: pointer;
+  font-weight: 600;
+}
+#messageDiv input {
+  height: 36.5px;
+  margin: -1.5px -5px 0 -6px;
+  padding: 5px;
+  vertical-align: top;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#messageDiv button {
+  height: 38px;
+  font-size: 16px;
+  vertical-align: top;
+}
+#messageDiv #nick {
+  width: 200px;
+  margin: -2px 0 0 -0.015px;
+}
+#messageDiv #nick span {
+  font-weight: 600;
+}
+#messageDiv #nick span.offline {
+  color: #E0163E;
+}
+#messageDiv #send {
+  width: 59.015px;
+  margin: -2px 0 0 -1px;
+}
+#messageDiv #message {
+  width: 649px;
+}
+#commands {
+  padding-top: 20px;
+}
+#commands table {
+  border-collapse: separate;
+  background: #eee;
+  margin-bottom: 1.375em;
+  width: 100%;
+  border-spacing: 0;
+  margin-bottom: 1.375em;
+}
+#commands table th {
+  border-top-width: 1px;
+  background: #d5d5d5;
+  vertical-align: bottom;
+  font-weight: bold;
+  text-align: left;
+}
+#commands table td,
+#commands table th {
+  padding: 5px;
+  font-size: 14px;
+  border-color: #555;
+  border: 0;
+  border-style: dotted;
+  border-bottom-width: 1px;
+  border-left-width: 1px;
+}
+#commands table td:last-of-type,
+#commands table th:last-of-type {
+  border-right-width: 1px;
+}
+.yourNick {
+  text-decoration: underline;
+}
+</style>
