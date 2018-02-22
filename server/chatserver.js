@@ -43,11 +43,18 @@ wsServer.on('request', function(request) {
     return;
   }
   
-  // Loop through protocols.
-  for (var i = 0; i < request.requestedProtocols.length; i++) {
-    if (request.requestedProtocols[i] === 'chat-protocol') {
-      acceptedConnection = acceptConnectionAsChat(request);
-    }
+  if(Object.prototype.toString.call(request.requestedProtocols) == '[object Array]' && request.requestedProtocols != null) {
+	var amountOfProtocols = request.requestedProtocols.length;  
+	
+	// Loop through protocols.
+	for (var i = 0; i < amountOfProtocols; i++) {
+	  if (request.requestedProtocols[i] === 'chat-protocol') {
+		  acceptedConnection = acceptConnectionAsChat(request);
+	  }
+	}
+  }
+  else if(request.requestedProtocols === 'chat-protocol') {
+	acceptedConnection = acceptConnectionAsChat(request);
   }
   
   // Unsupported protocol
